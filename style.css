@@ -1,0 +1,92 @@
+body{
+    background-color: #f0e4d7;
+    padding-left: 30px;
+  }
+        
+  .alles {
+    border: solid;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px;
+    border-width: 1.5px;
+    border-color: #4a3933;
+  }
+  
+  .dog{
+    padding:2px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #2b2e4a;
+  }
+  
+  .btn-primary:hover{
+    background-color: #f5c0c0;
+    border-color: #f5c0c0;
+  }
+  
+  .btn-success:hover{
+    background-color: #f5c0c0;
+    border-color: #f5c0c0;
+  }
+  
+  .btn-primary{
+    background-color: #ff7171;
+    border-color: #ff7171;
+  }
+  
+  .btn-success{
+    background-color: #9fd8df;
+    border-color: #9fd8df;
+  }
+  .house{
+    font-size: 30px;
+    font-weight: bold;
+    color: #2b2e4a;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+  }
+  
+  .cheese{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2b2e4a;
+  }
+  
+  
+  .glasses{
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  
+  .bottle{
+    font-size: 35px;
+    
+  }
+  .cat{
+    position:relative;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 70%;
+    font-size: 20px;
+    color:#2b2e4a;
+    top: 20%;
+  }
+  
+  .row{
+    color:#2b2e4a;
+    font-size: 20px;
+  }
+  
+  
+  .degrees{
+    top: -18px;
+    position: relative;
+  }
+  
+  #description{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2b2e4a;
+  }
+  
+  
