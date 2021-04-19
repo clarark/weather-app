@@ -47,7 +47,7 @@ function formatDate(now) {
   
     function handleSubmit(event){
       event.preventDefault();
-    let input = document.querySelector(".dog");
+    let input = document.querySelector(".input-text");
     let city = input.value;
   
     changeCity(city);
