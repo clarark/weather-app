@@ -84,8 +84,9 @@ body{
   
   
   .degrees{
-    top: -18px;
+    top: -16px;
     position: relative;
+    font-size: 17px;
   }
   
   #description{
@@ -96,6 +97,10 @@ body{
 
   .overview{
     margin-bottom: 20px;
+  }
+
+  .degree-fahrenheit{
+    text-decoration: none;
   }
   
   
