@@ -18,7 +18,7 @@ body{
   }
   
   .input-text{
-    padding:2px;
+    padding:9px;
     margin: 5px;
     border-radius: 4px;
     border: 1px solid #2b2e4a;
@@ -32,16 +32,19 @@ body{
   .btn-success:hover{
     background-color: #f5c0c0;
     border-color: #f5c0c0;
+    
   }
   
   .btn-primary{
     background-color: #ff7171;
     border-color: #ff7171;
+    padding: 9px;
   }
   
   .btn-success{
     background-color: #9fd8df;
     border-color: #9fd8df;
+    padding: 9px;
   }
   .house{
     font-size: 30px;
@@ -71,10 +74,10 @@ body{
   .weather{
     position:relative;
     font-family: Arial, Helvetica, sans-serif;
-    left: 70%;
-    font-size: 20px;
+    left: 350px;
+    font-size: 22px;
     color: rgb(135, 135, 135);
-    top: 20%;
+    top: -60px;
   }
   
   .row{
@@ -96,7 +99,7 @@ body{
   }
 
   .overview{
-    margin-bottom: 20px;
+    margin-bottom: 1px;
   }
 
   .degrees-fahrenheit{
