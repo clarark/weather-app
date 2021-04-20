@@ -21,7 +21,7 @@ function formatDate(now) {
     let city = document.querySelector(".house");
       city.innerHTML = response.data.name;
     let temp = Math.round(response.data.main.temp);
-    let newTemp = document.querySelector(".glasses");
+    let newTemp = document.querySelector(".degree-number");
     newTemp.innerHTML = temp;
     let humidity = Math.round(response.data.main.humidity);
     let newHumidity = document.querySelector(".fu");
@@ -80,11 +80,20 @@ function formatDate(now) {
       
     }
 
-    
+    function displayCelsiusTemperature(event) {
+      event.preventDefault();
+      let temperatureElement = document.querySelector("#temperature");
+      temperatureElement. innerHTML = Math.round(celsiusTemperature);
+
+    }
+
+
   let celsiusTemperature = null;
 
   let element = document.querySelector("form");
   element.addEventListener("submit", handleSubmit);
+
+  changeCity("New York");
   
   let button = document.querySelector(".btn-success");
   button.addEventListener("click", geoApi);
@@ -95,5 +104,8 @@ function formatDate(now) {
   
   let fahrenheitLink = document.querySelector("#fahrenheit-link");
   fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+  let celsiusLink = document.querySelector("#celsius-link");
+  celsiusLink.addEventListener("click", displayCelsiusTemperature);
   
-  changeCity("New York");
+  
