@@ -35,6 +35,8 @@ function formatDate(now) {
     let iconElement = document.querySelector("#icon");
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     iconElement.setAttribute("alt", response.data.weather[0].description);
+    
+    celsiusTemperature = response.data.main.temp;
   }
    
   function changeCity(city) {
@@ -69,7 +71,18 @@ function formatDate(now) {
       
       axios.get(apiUrl).then(showTemperature);
     }
-  
+
+    function displayFahrenheitTemperature(event) {
+      event.preventDefault();
+      let a = document.querySelector("#temperature");
+      let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32
+      a.innerHTML = Math.round(fahrenheitTemperature);
+      
+    }
+
+    
+  let celsiusTemperature = null;
+
   let element = document.querySelector("form");
   element.addEventListener("submit", handleSubmit);
   
@@ -80,6 +93,7 @@ function formatDate(now) {
   let now = new Date();
   date.innerHTML = formatDate(now);
   
+  let fahrenheitLink = document.querySelector("#fahrenheit-link");
+  fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+  
   changeCity("New York");
-  
-  
