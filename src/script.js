@@ -19,7 +19,7 @@ function formatDate(now) {
   
   function showTemperature(response) {
     let city = document.querySelector(".house");
-      city.innerHTML = response.data.name;
+    city.innerHTML = response.data.name;
     let temp = Math.round(response.data.main.temp);
     let newTemp = document.querySelector(".degree-number");
     newTemp.innerHTML = temp;
@@ -50,7 +50,7 @@ function formatDate(now) {
     }
   
     function handleSubmit(event){
-      event.preventDefault();
+    event.preventDefault();
     let input = document.querySelector(".input-text");
     let city = input.value;
   
@@ -77,7 +77,7 @@ function formatDate(now) {
       let temperatureElement = document.querySelector("#temperature");
       celsiusLink.classList.remove("active");
       fahrenheitLink.classList.add("active");
-      let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32
+      let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
       temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
       
     }
@@ -97,19 +97,18 @@ function formatDate(now) {
   let element = document.querySelector("form");
   element.addEventListener("submit", handleSubmit);
 
-  changeCity("New York");
-  
   let button = document.querySelector(".btn-success");
   button.addEventListener("click", geoApi);
-  
+
   let date = document.querySelector(".cheese");
   let now = new Date();
   date.innerHTML = formatDate(now);
-  
+
   let fahrenheitLink = document.querySelector("#fahrenheit-link");
   fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
   let celsiusLink = document.querySelector("#celsius-link");
   celsiusLink.addEventListener("click", displayCelsiusTemperature);
   
+  changeCity("New York");
   
